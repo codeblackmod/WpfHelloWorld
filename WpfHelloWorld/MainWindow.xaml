@@ -6,12 +6,8 @@
         xmlns:local="clr-namespace:WpfHelloWorld"
         mc:Ignorable="d"
         Title="My First GUI" Height="450" Width="800">
+<!-- XAML -> Extensible Application Markup Language-->
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hello Daniel" VerticalAlignment="Center" Grid.Column="1"/>
-
+        <Button Content="Click Me" Height="25" Width="100" FontSize="17"/>
     </Grid>
 </Window>
