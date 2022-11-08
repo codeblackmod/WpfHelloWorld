@@ -7,14 +7,18 @@
         mc:Ignorable="d"
         Title="My First GUI" Height="450" Width="800">
 <!-- XAML -> Extensible Application Markup Language-->
-    <StackPanel>
-        <!-- Direct event-->
-        <Button Content="Click Me" Click="Button_Click" Height="25" Width="100" Margin="20"/>
-        
-        <!-- Don't work with the left click - Bubbling event-->
-        <Button Content="Click Me (only right click works)" MouseUp="Button_MouseUp" Height="25" Width="200"/>
-        
-        <!-- Rebuild that it works also with left click - Tunneling event-->
-        <Button Content="Click Me (both works)" PreviewMouseUp="Button_PreviewMouseUp" Height="25" Width="150" Margin="20"/>
-    </StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Content="Column 0 / Row 0"/>
+        <Button Grid.Column="1" Grid.Row="0" Content="Column 1 / Row 0"/>
+        <Button Grid.Column="0" Grid.Row="1" Content="Column 0 / Row 1"/>
+        <Button Grid.Column="1" Grid.Row="1" Content="Column 1 / Row 1"/>
+    </Grid>
 </Window>
