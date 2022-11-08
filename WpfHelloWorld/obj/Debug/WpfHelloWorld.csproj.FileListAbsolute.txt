@@ -1,0 +1,16 @@
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\bin\Debug\WpfHelloWorld.exe.config
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\bin\Debug\WpfHelloWorld.exe
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\bin\Debug\WpfHelloWorld.pdb
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld.csproj.AssemblyReference.cache
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld.csproj.SuggestedBindingRedirects.cache
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\MainWindow.g.cs
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\App.g.cs
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld_MarkupCompile.cache
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld_MarkupCompile.lref
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\MainWindow.baml
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld.g.resources
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld.Properties.Resources.resources
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld.csproj.GenerateResource.cache
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld.exe
+C:\Users\schwa\source\repos\codeblackmod\WpfHelloWorld\WpfHelloWorld\obj\Debug\WpfHelloWorld.pdb
