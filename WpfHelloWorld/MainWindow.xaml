@@ -11,14 +11,21 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Button Grid.Column="0" Grid.Row="0" Content="Column 0 / Row 0"/>
         <Button Grid.Column="1" Grid.Row="0" Content="Column 1 / Row 0"/>
+        <Button Grid.Column="2" Grid.Row="0" Content="Column 2 / Row 0"/>
         <Button Grid.Column="0" Grid.Row="1" Content="Column 0 / Row 1"/>
         <Button Grid.Column="1" Grid.Row="1" Content="Column 1 / Row 1"/>
+        <Button Grid.Column="2" Grid.Row="1" Content="Column 2 / Row 1"/>
+        <Button Grid.Column="0" Grid.Row="2" Content="Column 0 / Row 2"/>
+        <Button Grid.Column="1" Grid.Row="2" Content="Column 1 / Row 2"/>
+        <TextBlock Grid.Column="2" Grid.Row="2" Text="Fun with columns and rows" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="17"/>
     </Grid>
 </Window>
