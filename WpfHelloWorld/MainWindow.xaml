@@ -8,14 +8,13 @@
         Title="My First GUI" Height="450" Width="800">
 <!-- XAML -> Extensible Application Markup Language-->
     <StackPanel>
-        <TextBlock HorizontalAlignment="Center" Margin="20">Hello World.</TextBlock>
-
-        <ListBox Height="100" Width="100">
-            <ListBoxItem Content="Item 1"/>
-            <ListBoxItem Content="Item 2"/>
-            <ListBoxItem Content="Item 3"/>
-        </ListBox>
-
+        <!-- Direct event-->
         <Button Content="Click Me" Click="Button_Click" Height="25" Width="100" Margin="20"/>
+        
+        <!-- Don't work with the left click - Bubbling event-->
+        <Button Content="Click Me (only right click works)" MouseUp="Button_MouseUp" Height="25" Width="200"/>
+        
+        <!-- Rebuild that it works also with left click - Tunneling event-->
+        <Button Content="Click Me (both works)" PreviewMouseUp="Button_PreviewMouseUp" Height="25" Width="150" Margin="20"/>
     </StackPanel>
 </Window>
