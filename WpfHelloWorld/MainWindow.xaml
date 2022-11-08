@@ -7,4 +7,15 @@
         mc:Ignorable="d"
         Title="My First GUI" Height="450" Width="800">
 <!-- XAML -> Extensible Application Markup Language-->
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" Margin="20">Hello World.</TextBlock>
+
+        <ListBox Height="100" Width="100">
+            <ListBoxItem Content="Item 1"/>
+            <ListBoxItem Content="Item 2"/>
+            <ListBoxItem Content="Item 3"/>
+        </ListBox>
+
+        <Button Content="Click Me" Click="Button_Click" Height="25" Width="100" Margin="20"/>
+    </StackPanel>
 </Window>
