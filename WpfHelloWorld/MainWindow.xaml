@@ -9,7 +9,13 @@
 <!-- XAML -> Extensible Application Markup Language-->
     <Grid>
         <Button>
-            <Button.Content>Hi there</Button.Content>
+            <Button.Content>
+                <WrapPanel>
+                    <TextBlock Foreground="Blue" FontSize="25">Multi</TextBlock>
+                    <TextBlock Foreground="Red" FontSize="25">Colour</TextBlock>
+                    <TextBlock Foreground="Green" FontSize="25">Button</TextBlock>
+                </WrapPanel>
+            </Button.Content>
             <Button.Height>50</Button.Height>
             <Button.Width>250</Button.Width>
         </Button>
