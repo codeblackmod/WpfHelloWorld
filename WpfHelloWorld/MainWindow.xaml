@@ -8,6 +8,10 @@
         Title="My First GUI" Height="450" Width="800">
 <!-- XAML -> Extensible Application Markup Language-->
     <Grid>
-        <Button Content="Click Me" Height="25" Width="100" FontSize="17"/>
+        <Button>
+            <Button.Content>Hi there</Button.Content>
+            <Button.Height>50</Button.Height>
+            <Button.Width>250</Button.Width>
+        </Button>
     </Grid>
 </Window>
