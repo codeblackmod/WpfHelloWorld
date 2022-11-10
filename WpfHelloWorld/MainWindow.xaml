@@ -7,17 +7,19 @@
         mc:Ignorable="d"
         Title="My First GUI" Height="450" Width="800">
 <!-- XAML -> Extensible Application Markup Language-->
-    <Grid>
-        <Button Height="100" Width="200" Content="Click me" Background="PaleVioletRed">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="FontSize" Value="30"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>
-    </Grid>
+    <!-- 
+    
+    4Modes of Data Binding
+        Binding Target: <-      oneWay              Binding Source
+        Binding Target: <-      twoWay  ->          Binding Source
+        Binding Target:         oneWayToSource  ->  Binding Source
+        Binding Target: <_ _ _  OneTime             Binding Source - done in constructor so only once during initialization
+    
+    -->
+    <StackPanel>
+        <!-- Binding Target-->
+        <TextBox Name="MyTextBox" Width="100" Margin="50" Text="{Binding ElementName=MySlider, Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <!-- Binding Source-->
+        <Slider IsSnapToTickEnabled="True" Name="MySlider" Minimum="0" Maximum="100"></Slider>
+    </StackPanel>
 </Window>
