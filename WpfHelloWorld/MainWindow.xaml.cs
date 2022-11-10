@@ -20,11 +20,14 @@ namespace WpfHelloWorld
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Sum SumObj { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
-            MySlider.Value = 17;
-            MyTextBox.Text = MySlider.Value.ToString();
+
+            SumObj = new Sum { Num1 = "1", Num2 = "3" };
+            this.DataContext = SumObj;
         }
     }
 }
