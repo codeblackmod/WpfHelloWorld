@@ -20,14 +20,36 @@ namespace WpfHelloWorld
     /// </summary>
     public partial class MainWindow : Window
     {
-        public Sum SumObj { get; set; }
-
         public MainWindow()
         {
             InitializeComponent();
+            List<Match> matches = new List<Match>();
+            matches.Add(new Match() { Team1 = "Bayern Munich", Team2 = "Real Madrid", Score1 = 3, Score2 = 2, Completion = 85 });
+            matches.Add(new Match() { Team1 = "Lask", Team2 = "Red Bull Salzburg", Score1 = 1, Score2 = 1, Completion = 15 });
+            matches.Add(new Match() { Team1 = "FC Bayern", Team2 = "Dortmund", Score1 = 2, Score2 = 0, Completion = 75 });
 
-            SumObj = new Sum { Num1 = "1", Num2 = "3" };
-            this.DataContext = SumObj;
+            lbMatches.ItemsSource = matches;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbMatches.SelectedItem != null)
+            {
+                MessageBox.Show("Selected Match: "
+                    + (lbMatches.SelectedItem as Match).Team1 + " "
+                    + (lbMatches.SelectedItem as Match).Score1 + " "
+                    + (lbMatches.SelectedItem as Match).Score2 + " "
+                    + (lbMatches.SelectedItem as Match).Team2);
+            }
+        }
+    }
+
+    public class Match
+    {
+        public int Score1 { get; set; }
+        public int Score2 { get; set; }
+        public string Team1 { get; set; }
+        public string Team2 { get; set; }
+        public int Completion { get; set; }
     }
 }
